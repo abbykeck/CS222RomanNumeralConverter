@@ -115,9 +115,15 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(1000);
         Assertions.assertEquals("M", actual);
     }
+
     @Test
     public void testConvertThreeThousand() {
         String actual = RomanNumeralConverter.convert(3000);
         Assertions.assertEquals("MMM", actual);
+    }
+    @Test
+    public void testConvert2999() {
+        String actual = RomanNumeralConverter.convert(2999);
+        Assertions.assertEquals("MMCMXCIX", actual);
     }
 }
