@@ -3,6 +3,10 @@ package edu.bsu.cs;
 public class RomanNumeralConverter {
     public static String convert(int number) {
         StringBuilder numeral = new StringBuilder();
+        if (number >= 500) {
+            numeral.append("D");
+            number -= 500;
+        }
         if (number >= 400) {
             numeral.append("CD");
             number -= 400;

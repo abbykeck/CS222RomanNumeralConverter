@@ -99,4 +99,9 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(400);
         Assertions.assertEquals("CD", actual);
     }
+    @Test
+    public void testConvertFiveHundred() {
+        String actual = RomanNumeralConverter.convert(500);
+        Assertions.assertEquals("D", actual);
+    }
 }
