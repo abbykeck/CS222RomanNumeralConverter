@@ -64,4 +64,9 @@ public class RomanNumeralConverterTest {
         Assertions.assertEquals("XIX", actual);
     }
 
+    @Test
+    public void testConvertTwenty() {
+        String actual = RomanNumeralConverter.convert(20);
+        Assertions.assertEquals("XX", actual);
+    }
 }

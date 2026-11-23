@@ -4,8 +4,10 @@ public class RomanNumeralConverter {
     public static String convert(int number) {
         StringBuilder numeral = new StringBuilder();
         if (number >= 10) {
-            numeral.append("X");
-            number -= 10;
+            while (number >= 10) {
+                numeral.append("X");
+                number -= 10;
+            }
         }
         if (number == 9) {
             numeral.append("IX");
