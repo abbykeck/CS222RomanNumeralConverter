@@ -3,6 +3,11 @@ package edu.bsu.cs;
 public class RomanNumeralConverter {
     public static String convert(int number) {
         StringBuilder numeral = new StringBuilder();
+        if (number >= 900) {
+            numeral.append("CM");
+            number -= 900;
+        }
+
         if (number >= 500) {
             numeral.append("D");
             number -= 500;
