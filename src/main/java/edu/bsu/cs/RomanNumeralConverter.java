@@ -7,12 +7,10 @@ public class RomanNumeralConverter {
             numeral.append("V");
         }
         else if (number == 4) {
-            return "IV";
+            numeral.append("IV");
         }
         else {
-            for (int i = number; i > 0; i--) {
-                numeral.append("I");
-            }
+            numeral.append("I".repeat(number));
         }
         return numeral.toString();
     }
