@@ -3,7 +3,7 @@ package edu.bsu.cs;
 public class RomanNumeralConverter {
     public static String convert(int number) {
         StringBuilder numeral = new StringBuilder();
-        if (number >= 100) {
+        while (number >= 100) {
             numeral.append("C");
             number -= 100;
         }
@@ -21,11 +21,9 @@ public class RomanNumeralConverter {
             number -= 40;
         }
 
-        if (number >= 10) {
-            while (number >= 10) {
-                numeral.append("X");
-                number -= 10;
-            }
+        while (number >= 10) {
+            numeral.append("X");
+            number -= 10;
         }
         if (number == 9) {
             numeral.append("IX");
