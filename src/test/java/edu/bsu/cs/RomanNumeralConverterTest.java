@@ -33,4 +33,10 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(8);
         Assertions.assertEquals("VIII", actual);
     }
+
+    @Test
+    public void testConvertNine() {
+        String actual = RomanNumeralConverter.convert(9);
+        Assertions.assertEquals("IX", actual);
+    }
 }
