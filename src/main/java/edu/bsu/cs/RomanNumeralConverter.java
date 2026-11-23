@@ -7,7 +7,7 @@ public class RomanNumeralConverter {
             numeral.append("X");
             number -= 10;
         }
-        else if (number == 9) {
+        if (number == 9) {
             numeral.append("IX");
             number -= 9;
         }

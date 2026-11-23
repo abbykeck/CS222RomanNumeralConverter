@@ -57,4 +57,11 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(14);
         Assertions.assertEquals("XIV", actual);
     }
+
+    @Test
+    public void testConvertNineteen() {
+        String actual = RomanNumeralConverter.convert(19);
+        Assertions.assertEquals("XIX", actual);
+    }
+
 }
