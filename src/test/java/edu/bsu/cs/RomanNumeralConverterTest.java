@@ -81,4 +81,10 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(40);
         Assertions.assertEquals("XL", actual);
     }
+
+    @Test
+    public void testConvertFifty() {
+        String actual = RomanNumeralConverter.convert(50);
+        Assertions.assertEquals("L", actual);
+    }
 }

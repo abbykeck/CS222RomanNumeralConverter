@@ -3,6 +3,10 @@ package edu.bsu.cs;
 public class RomanNumeralConverter {
     public static String convert(int number) {
         StringBuilder numeral = new StringBuilder();
+        if (number >= 50) {
+            numeral.append("L");
+            number -= 50;
+        }
         if (number >= 40) {
             numeral.append("XL");
             number -= 40;
