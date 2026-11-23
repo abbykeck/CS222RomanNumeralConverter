@@ -15,4 +15,10 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(2);
         Assertions.assertEquals("II", actual);
     }
+
+    @Test
+    public void testConvertFour() {
+        String actual = RomanNumeralConverter.convert(4);
+        Assertions.assertEquals("IV", actual);
+    }
 }
