@@ -9,25 +9,21 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(1);
         Assertions.assertEquals("I", actual);
     }
-
     @Test
     public void testConvertTwo() {
         String actual = RomanNumeralConverter.convert(2);
         Assertions.assertEquals("II", actual);
     }
-
     @Test
     public void testConvertFour() {
         String actual = RomanNumeralConverter.convert(4);
         Assertions.assertEquals("IV", actual);
     }
-
     @Test
     public void testConvertFive() {
         String actual = RomanNumeralConverter.convert(5);
         Assertions.assertEquals("V", actual);
     }
-
     @Test
     public void testConvertEight() {
         String actual = RomanNumeralConverter.convert(8);
@@ -39,19 +35,16 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(9);
         Assertions.assertEquals("IX", actual);
     }
-
     @Test
     public void testConvertTen() {
         String actual = RomanNumeralConverter.convert(10);
         Assertions.assertEquals("X", actual);
     }
-
     @Test
     public void testConvertThirteen() {
         String actual = RomanNumeralConverter.convert(13);
         Assertions.assertEquals("XIII", actual);
     }
-
     @Test
     public void testConvertFourteen() {
         String actual = RomanNumeralConverter.convert(14);
@@ -63,13 +56,11 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(19);
         Assertions.assertEquals("XIX", actual);
     }
-
     @Test
     public void testConvertTwenty() {
         String actual = RomanNumeralConverter.convert(20);
         Assertions.assertEquals("XX", actual);
     }
-
     @Test
     public void testConvertThirtyEight() {
         String actual = RomanNumeralConverter.convert(38);
@@ -81,7 +72,6 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(40);
         Assertions.assertEquals("XL", actual);
     }
-
     @Test
     public void testConvertFifty() {
         String actual = RomanNumeralConverter.convert(50);
@@ -89,8 +79,13 @@ public class RomanNumeralConverterTest {
     }
 
     @Test
-    public void testConvertHundred() {
+    public void testConvertNinety() {
         String actual = RomanNumeralConverter.convert(90);
         Assertions.assertEquals("XC", actual);
+    }
+    @Test
+    public void testConvertHundred() {
+        String actual = RomanNumeralConverter.convert(100);
+        Assertions.assertEquals("C", actual);
     }
 }
