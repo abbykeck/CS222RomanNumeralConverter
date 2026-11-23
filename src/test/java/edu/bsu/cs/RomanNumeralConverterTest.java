@@ -27,4 +27,10 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(5);
         Assertions.assertEquals("V", actual);
     }
+
+    @Test
+    public void testConvertEight() {
+        String actual = RomanNumeralConverter.convert(8);
+        Assertions.assertEquals("VIII", actual);
+    }
 }
