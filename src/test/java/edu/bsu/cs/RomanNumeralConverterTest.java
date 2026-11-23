@@ -126,4 +126,9 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(2999);
         Assertions.assertEquals("MMCMXCIX", actual);
     }
+    @Test
+    public void testConvert1666() {
+        String actual = RomanNumeralConverter.convert(1666);
+        Assertions.assertEquals("MDCLXVI", actual);
+    }
 }
