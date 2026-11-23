@@ -3,7 +3,7 @@ package edu.bsu.cs;
 public class RomanNumeralConverter {
     public static String convert(int number) {
         StringBuilder numeral = new StringBuilder();
-        if (number == 10) {
+        if (number >= 10) {
             numeral.append("X");
             number -= 10;
         }
