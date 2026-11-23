@@ -110,4 +110,9 @@ public class RomanNumeralConverterTest {
         String actual = RomanNumeralConverter.convert(900);
         Assertions.assertEquals("CM", actual);
     }
+    @Test
+    public void testConvertThousand() {
+        String actual = RomanNumeralConverter.convert(1000);
+        Assertions.assertEquals("M", actual);
+    }
 }
